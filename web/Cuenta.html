@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Crear Cuenta</title>
+    <link rel="icon" href= "images/EscudoVelox2.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel = "stylesheet" type = 'text/css' href = './Styles/Formulario.css'>
+    <script src="https://kit.fontawesome.com/9fb0a1aa63.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class = "container logo-nav-container">
+            <p class = "logo animate__animated animate__zoomInLeft animate__slower"><i class="fas fa-user-circle"></i> Crear <br class = 'espacioV'>Cuenta</p>
+            <div class = "espacio"></div>
+            <span class="menu-icon">Ver Menú  <i class="fas fa-chevron-down"></i></span>
+            <nav class = "navigation">
+                <ul class="animate__animated animate__zoomInRight animate__slower">
+                    <li onclick="javascript:iniciarsesion()"><i class="fas fa-home"></i> Iniciar Sesión</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <main>
+            <form action="CrearCuenta" name = "formularioRegistro" onsubmit="return validarRegistro(this)" class="formulario">
+                <h4 class="formulario__titulo">Ingrese sus Datos</h4>
+                <input type="email" name = "CorreoElectrónico" class="formulario__input" placeholder="Correo Electrónico">
+                
+                <input type="submit" value="Registrarse" onclick="" class = "olvidar">
+            </form>
+            
+        </main>
+    </section>
+    
+    <script src="./Scripts/Basicos.js"></script>
+    <script src="./Scripts/ValidacionTeclado.js"></script>
+    <script src="./Scripts/ValidacionFormularios.js"></script>
+
+
+</body>
+</html>
